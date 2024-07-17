@@ -58,6 +58,8 @@ TARGET_NO_BOOTLOADER := true
 
 # Camera
 TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
+TARGET_INCLUDES_MIUI_CAMERA := true
+MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
@@ -76,7 +78,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/vendor_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/configs/hidl/xiaomi_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    vendor/blaze/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/hidl/manifest_lahaina.xml \
